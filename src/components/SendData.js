@@ -1,7 +1,9 @@
 import React from 'react';
 
 const SendData = (props) => {
+        
         return (
+            //view of user's submitted data through props (which is properties passed from other components)
             <div>
                <h2>Send Data</h2>
                <b>Username: </b> {props.formData.authData.username} <br />
