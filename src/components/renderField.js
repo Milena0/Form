@@ -1,5 +1,6 @@
 import React from 'react';
 
+//template of input fields
 const renderField = ({ input, label, type, rows,id, meta: { touched, error, warning } }) => (
     <div className="form-group" style={ {marginBottom: '1em'} }>
         <label htmlFor={label}>{label}</label>
