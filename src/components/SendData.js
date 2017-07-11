@@ -10,10 +10,7 @@ const SendData = (props) => {
                <b>Name: </b> {props.formData.personalData.name} <br />
                <b>Date: </b> {props.formData.personalData.date} <br />
                <b>Additional Information:</b> {props.formData.personalData.additionalInfo} <br />
-               <div className="well col-xs-12" >
-                    <button className="btn btn-success pull-right" >Next</button>
-                </div>
-            </div>
+              </div>
             
         );
 };
