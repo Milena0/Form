@@ -3,7 +3,6 @@ import NavBar from './NavBar';
 import Authentication from './Authentication';
 import PersonalData from './PersonalData';
 import SendData from './SendData';
-import '../App.css';
 
 export default class App extends Component {
   constructor() {
