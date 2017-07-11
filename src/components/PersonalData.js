@@ -4,11 +4,12 @@ import renderField from './renderField';
 /*import textArea from './textArea';*/
 import validate from './validate';
 
- class personalDataForm extends Component {
+const personalDataForm =(props)=> {
 
-    render(){
-        const { handleSubmit, submitting } = this.props;
+        const { handleSubmit, submitting } = props;
+
         return (
+            //rendering user's inputs on submit
             <form onSubmit={(e) => {e.preventDefault()}}>
                 <Field name="name" type="text" component={renderField} label="Name"/>
                 <Field name="date" type="date" component={renderField} label="Date"/>
@@ -23,11 +24,11 @@ import validate from './validate';
                 </div>
             </form>
         )
-    }
-}
+};
 
 
 export default reduxForm({
   form: 'AuthenticationForm',
   validate
 })(personalDataForm);
+
