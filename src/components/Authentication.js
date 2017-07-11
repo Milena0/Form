@@ -4,8 +4,11 @@ import renderField from './renderField';
 import validate from './validate';
 
 const AuthenticationForm = (props) => {
+
   const { handleSubmit, submitting } = props;
+
   return (
+      //rendering users inputs on submit
     <form onSubmit={handleSubmit}>
         <Field name="username" type="text" component={renderField} label="Username"/>
         <Field name="email" type="email" component={renderField} label="Email"/>
