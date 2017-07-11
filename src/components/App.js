@@ -7,6 +7,7 @@ import SendData from './SendData';
 export default class App extends Component {
   constructor() {
     super();
+    //initial state
         this.stages = ['authData', 'personalData', 'sendData'];
         this.state = {
       formStage: "authData",
@@ -29,7 +30,7 @@ export default class App extends Component {
     let newState = Object.assign({}, this.state);
     newState.formData[stage] = data;
 
-    // change to the next state.
+    //change to the next state
     let nextIndex = this.stages.indexOf(stage) + 1;
     if(nextIndex < this.stages.length) {
       newState.formStage = this.stages[nextIndex];
