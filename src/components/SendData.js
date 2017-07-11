@@ -3,7 +3,7 @@ import React from 'react';
 const SendData = (props) => {
         return (
             <div>
-               <h1>Send Data</h1>
+               <h2>Send Data</h2>
                <b>Username: </b> {props.formData.authData.username} <br />
                <b>Email: </b> {props.formData.authData.email} <br />
                <b>Password: </b> {props.formData.authData.password} <br />
