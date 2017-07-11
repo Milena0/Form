@@ -1,3 +1,4 @@
+//validation check for inputs
 const validate = values => {
     const errors = {};
     if (!values.username) {
